@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Panel 标题面板</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <!-- <link href="../demo.css" rel="stylesheet" type="text/css" /> -->
+
+
+    <script src="http://www.miniui.com/scripts/boot.js" type="text/javascript"></script>
+    <link href="http://www.miniui.com/scripts/miniui/themes/default/large-mode.css" rel="stylesheet" type="text/css" />
+    <link href="http://www.miniui.com/scripts/miniui/themes/bootstrap/skin.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="http://www.miniui.com/scripts/miniui/res/glyphicons-imgs/glyphicons-imgs.min.css" rel="stylesheet" type="text/css" /> -->
+
+    <style>
+        .container {
+            padding: 30px;
+        }
+
+        .container .mini-panel {
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="container"> -->
+        <!-- <div class="mini-clearfix ">
+            <div class="mini-col-6">
+                <div class="mini-panel mini-panel-info" title="面板标题" width="auto" showCollapseButton="true"
+                    showCloseButton="true">
+                    <div>111</div>
+                    <div>111</div>
+                    <div>111</div>
+                    <div>111</div>
+                    <div>111</div>
+                </div>
+
+            </div>
+        </div> -->
+        <!-- <input id="d" type="button" value="showAtEl" onclick="showAtPos()" />
+    </div> -->
+    <div  onclick="showAtPos()">查看更多</div>
+    <div id="win1" class="mini-window mini-panel mini-panel-info" title="窗体" style="width:800px;height:600px;" showMaxButton="false"
+        showCollapseButton="true" showShadow="true" showToolbar="true" showFooter="true" showModal="false"
+        allowResize="true" allowDrag="true">
+        <div>111</div>
+        <div>111</div>
+        <div>111</div>
+        <div property="footer" style="text-align:right;padding:5px;padding-right:15px;">
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    mini.parse();
+    function showAtPos() {
+        var win = mini.get("win1");
+        var x = "center";
+        var y = 300;
+        win.showAtPos(x, y);
+    }
+    // function showAtEl() {
+    //     var win = mini.get("win1");
+    //     var atEl = document.getElementById("d");
+    //     var xAlign = 400;
+    //     var yAlign = 250;
+    //     win.showAtEl(atEl, {
+    //         // xAlign: xAlign,
+    //         // yAlign: yAlign,
+    //         top: "300px",
+    //     });
+    // }
+    // function openAtPos() {
+    //     var win = mini.open({
+    //         title: 'mini.open弹出方式',
+    //         url: bootPATH + '../demo/overview.html',
+    //         showModal: false,
+    //         width: 400,
+    //         height: 250
+    //     });
+    //     var x = document.getElementById("x").value;
+    //     var y = document.getElementById("y").value;
+    //     win.showAtPos(x, y);
+    // }
+    // function hideWindow() {
+    //     var win = mini.get("win1");
+    //     win.hide();
+    // }
+    // showAtPos();
+
+
+
+</script>
+
+</html>
